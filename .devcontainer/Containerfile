@@ -9,7 +9,7 @@ ARG USER_ID=1000
 ARG GROUP_ID=1000
 
 RUN apt-get update && \
-    apt-get install -y locales git gcc wget flex bison gperf python3 python3-pip python3-virtualenv cmake ninja-build ccache libncurses-dev
+    apt-get install -y locales git wget flex bison gperf python3 python3-pip python3-virtualenv cmake ninja-build ccache libncurses-dev
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
