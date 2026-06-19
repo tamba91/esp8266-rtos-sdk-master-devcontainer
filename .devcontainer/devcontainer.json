@@ -1,5 +1,5 @@
 {
-  "name": "esp8266-rtos-sdk-esp-idf-master-devcontainer",
+  "name": "esp8266-rtos-sdk-master-devcontainer",
   "build": {
     "dockerfile": "Containerfile",
     "context": "."
@@ -11,9 +11,9 @@
     "ESPPORT": "/dev/ttyUSB0"
   },
   "runArgs": [
-    "--name=esp8266-rtos-sdk-esp-idf-master-devcontainer",
+    "--name=esp8266-rtos-sdk-master-devcontainer",
     "--userns=keep-id",
-    "--hostname=esp8266-rtos-sdk-esp-idf-master-devcontainer",
+    "--hostname=esp8266-rtos-sdk-master-devcontainer",
     "--device=/dev/ttyUSB0",
     "--annotation=run.oci.keep_original_groups=1"
   ],
