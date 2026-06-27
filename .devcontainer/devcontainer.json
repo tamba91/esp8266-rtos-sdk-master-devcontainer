@@ -24,16 +24,19 @@
         "seunlanlege.action-buttons"
       ],
       "settings": {
-        "C_Cpp.default.compilerPath": "",
+        "C_Cpp.intelliSenseEngine": "default",
+        "C_Cpp.default.compilerPath": "/home/esp8266/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc",
         "C_Cpp.default.compileCommands": [
           "${workspaceFolder}/build/compile_commands.json"
         ],
         "C_Cpp.default.includePath": [
-          "/home/esp8266/esp/ESP_8266_RTOS_SDK/components/**",
-          "${workspaceFolder}/**"
+          "${workspaceFolder}/include/**",
+          "${workspaceFolder}/**",
+          "/home/esp8266/esp/ESP8266_RTOS_SDK/components/**",
+          "/home/esp8266/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/xtensa-lx106-elf/include/**"
         ],
         "C_Cpp.default.browse.path": [
-          "/home/esp8266/esp/ESP_8266_RTOS_SDK/components",
+          "/home/esp8266/esp/ESP8266_RTOS_SDK/components",
           "${workspaceFolder}"
         ],
         "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
@@ -45,18 +48,52 @@
         "cmake.enableAutomaticKitScan": false,
         "cmake.ignoreCMakeListsMissing": true,
         "cmake.options.advanced": {
-          "build": { "statusBarVisibility": "hidden" },
-          "launch": { "statusBarVisibility": "hidden" },
-          "debug": { "statusBarVisibility": "hidden" }
+          "build": {
+            "statusBarVisibility": "hidden"
+          },
+          "launch": {
+            "statusBarVisibility": "hidden"
+          },
+          "debug": {
+            "statusBarVisibility": "hidden"
+          }
         },
         "actionButtons.commands": [
-          { "name": "$(settings-gear) Menuconfig", "command": "idf.py menuconfig", "singleInstance": true },
-          { "name": "$(wrench) Build", "command": "idf.py --ccache build", "singleInstance": true },
-          { "name": "$(info) IDF Size", "command": "idf.py size", "singleInstance": true },
-          { "name": "$(trash) Full Clean", "command": "idf.py fullclean", "singleInstance": true },
-          { "name": "$(zap) Flash", "command": "idf.py --ccache -p $ESPPORT flash", "singleInstance": true },
-          { "name": "$(close-all) Erase Flash", "command": "idf.py -p $ESPPORT erase_flash", "singleInstance": true },
-          { "name": "$(vm) Monitor", "command": "idf.py -p $ESPPORT monitor", "singleInstance": true }
+          {
+            "name": "$(settings-gear) Menuconfig",
+            "command": "idf.py menuconfig",
+            "singleInstance": true
+          },
+          {
+            "name": "$(wrench) Build",
+            "command": "idf.py --ccache build",
+            "singleInstance": true
+          },
+          {
+            "name": "$(info) IDF Size",
+            "command": "idf.py size",
+            "singleInstance": true
+          },
+          {
+            "name": "$(trash) Full Clean",
+            "command": "idf.py fullclean",
+            "singleInstance": true
+          },
+          {
+            "name": "$(zap) Flash",
+            "command": "idf.py --ccache -p $ESPPORT flash",
+            "singleInstance": true
+          },
+          {
+            "name": "$(close-all) Erase Flash",
+            "command": "idf.py -p $ESPPORT erase_flash",
+            "singleInstance": true
+          },
+          {
+            "name": "$(vm) Monitor",
+            "command": "idf.py -p $ESPPORT monitor",
+            "singleInstance": true
+          }
         ]
       }
     }
